@@ -1,8 +1,45 @@
 {
-  "name": "web3modal-vue",
-  "version": "1.0.5",
+  "_from": "web3modal-vue@1.0.5",
+  "_id": "web3modal-vue@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-+L28b7n8Vz2K9V6BMsRD5+rBVlsaLaCOzNGW2LVuAO+mlvjwwJ+AE32tQhIzZhK4leVr3sgZ8JTU0r6QNwZnrA==",
+  "_location": "/web3modal-vue",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "web3modal-vue@1.0.5",
+    "name": "web3modal-vue",
+    "escapedName": "web3modal-vue",
+    "rawSpec": "1.0.5",
+    "saveSpec": null,
+    "fetchSpec": "1.0.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/web3modal-vue/-/web3modal-vue-1.0.5.tgz",
+  "_shasum": "5ab840804453eb42708a421398824ebf166c791c",
+  "_spec": "web3modal-vue@1.0.5",
+  "_where": "C:\\xampp\\htdocs\\antex_ido\\web",
+  "author": {
+    "name": "SmallRuralDog"
+  },
+  "bugs": {
+    "url": "https://github.com/SmallRuralDog/web3modal-vue/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "detect-browser": "^5.2.0",
+    "vue-styled-components": "^1.6.0"
+  },
+  "deprecated": false,
   "description": "A single Web3 / Ethereum provider solution for all Wallets",
-  "main": "./src/Web3ModalVue.vue",
+  "files": [
+    "src"
+  ],
+  "homepage": "https://github.com/SmallRuralDog/web3modal-vue",
   "keywords": [
     "web3",
     "web3vue",
@@ -20,21 +57,12 @@
     "authereum",
     "frame"
   ],
-  "files": [
-    "src"
-  ],
-  "author": "SmallRuralDog",
   "license": "MIT",
-  "homepage": "https://github.com/SmallRuralDog/web3modal-vue",
+  "main": "./src/Web3ModalVue.vue",
+  "name": "web3modal-vue",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SmallRuralDog/web3modal-vue.git"
+    "url": "git+https://github.com/SmallRuralDog/web3modal-vue.git"
   },
-  "bugs": {
-    "url": "https://github.com/SmallRuralDog/web3modal-vue/issues"
-  },
-  "dependencies": {
-    "detect-browser": "^5.2.0",
-    "vue-styled-components": "^1.6.0"
-  }
+  "version": "1.0.5"
 }
