@@ -21,6 +21,16 @@ import BitskiLogo from "../logos/bitski.svg";
 // @ts-ignore
 import FrameLogo from "../logos/frame.svg";
 
+// @ts-ignore
+import AntexLogo from "../logos/antex.svg";
+
+export const ANTEX = {
+    id: "antex",
+    name: "Antex",
+    logo: AntexLogo,
+    type: "antex",
+    check: "isAntex"
+};
 
 export * from "../injected";
 

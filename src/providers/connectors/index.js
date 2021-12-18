@@ -1,3 +1,4 @@
+import antex from "./antex";
 import injected from "./injected";
 import walletconnect from "./walletconnect";
 import portis from "./portis";
@@ -11,6 +12,7 @@ import bitski from "./bitski";
 import frame from "./frame";
 
 export {
+    antex,
     injected,
     walletconnect,
     portis,

@@ -1,7 +1,10 @@
 <template>
   <SProviderWrapper :themeColors="themeColors" :class="PROVIDER_WRAPPER_CLASSNAME" @click="onClick">
     <SProviderContainer :themeColors="themeColors" :class="PROVIDER_CONTAINER_CLASSNAME">
-      <SIcon :className="PROVIDER_ICON_CLASSNAME">
+      <SIconAntex v-if="name === 'Antex'" :className="PROVIDER_ICON_CLASSNAME">
+        <img :src="logo" :alt="name"/>
+      </SIconAntex>
+      <SIcon v-if="name !== 'Antex'" :className="PROVIDER_ICON_CLASSNAME">
         <img :src="logo" :alt="name"/>
       </SIcon>
       <SName :themeColors="themeColors" :class="PROVIDER_NAME_CLASSNAME">{{ name }}</SName>
@@ -19,6 +22,29 @@ import {
   PROVIDER_NAME_CLASSNAME,
   PROVIDER_DESCRIPTION_CLASSNAME
 } from "../constants";
+
+const SIconAntex = styled.div`
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 50%;
+  overflow: visible;
+  box-shadow: none;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -15px;
+  transform: translateY(-8px);
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 10vw;
+    height: 10vw;
+  }
+`;
 
 const SIcon = styled.div`
   width: 45px;
@@ -97,7 +123,8 @@ export default {
     SProviderContainer,
     SDescription,
     SName,
-    SIcon
+    SIcon,
+    SIconAntex
   },
   data() {
     return {

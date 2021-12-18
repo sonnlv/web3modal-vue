@@ -74,6 +74,11 @@ export class ProviderController {
             const providerPackageOptions = this.providerOptions[id];
             if (providerPackageOptions) {
                 const isProvided = !!providerPackageOptions.package;
+
+                if (providerPackageOptions.options && providerPackageOptions.options.hideInMenu && providerPackageOptions.options.hideInMenu()) {
+                    return false;
+                }
+
                 if (isProvided) {
                     const requiredOptions = provider.package
                         ? provider.package.required

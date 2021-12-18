@@ -124,6 +124,9 @@ export function getProviderDescription(providerInfo) {
     }
     let description = "";
     switch (providerInfo.type) {
+        case "antex":
+            description = `Connect to your ${providerInfo.name} Wallet`;
+            break;
         case "injected":
             description = `Connect to your ${providerInfo.name} Wallet`;
             break;
