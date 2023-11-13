@@ -7,6 +7,15 @@
       <SName :themeColors="themeColors" :class="PROVIDER_NAME_CLASSNAME">{{ name }}</SName>
       <SDescription :themeColors="themeColors" :class="PROVIDER_DESCRIPTION_CLASSNAME">{{ description }}</SDescription>
     </SProviderContainer>
+      <span v-if="name==='OKX'">
+        <span v-if="isOkxInstall()">
+          installed
+        </span>
+        <span v-else>
+          not installed
+        </span>
+      </span>
+
   </SProviderWrapper>
 </template>
 
@@ -111,7 +120,10 @@ export default {
   methods: {
     onClick() {
       this.$emit('onClick')
-    }
+    },
+      isOkxInstall(){
+          return typeof window.okxwallet !== 'undefined';
+      }
   }
 }
 </script>
