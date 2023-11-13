@@ -22,17 +22,17 @@ import BitskiLogo from "../logos/bitski.svg";
 import FrameLogo from "../logos/frame.svg";
 
 // @ts-ignore
-import AntexLogo from "../logos/antex.svg";
-
-export const ANTEX = {
-    id: "antex",
-    name: "Antex",
-    logo: AntexLogo,
-    type: "antex",
-    check: "isAntex"
-};
+import OkxLogo from "../logos/okx.svg";
 
 export * from "../injected";
+
+export const OKX = {
+    id: "okx",
+    name: "OKX",
+    logo: OkxLogo,
+    type: "okx",
+    check: "isOkx"
+};
 
 export const WALLETCONNECT = {
     id: "walletconnect",
