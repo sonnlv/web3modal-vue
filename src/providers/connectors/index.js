@@ -1,4 +1,5 @@
 import okx from "./okx";
+import gate from "./gate";
 import injected from "./injected";
 import walletconnect from "./walletconnect";
 import portis from "./portis";
@@ -14,6 +15,7 @@ import frame from "./frame";
 export {
     injected,
     okx,
+    gate,
     walletconnect,
     portis,
     fortmatic,

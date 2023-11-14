@@ -15,6 +15,14 @@
           not installed
         </span>
       </span>
+      <span v-if="name==='Gate Wallet'">
+        <span v-if="isGateInstall()">
+          installed
+        </span>
+        <span v-else>
+          not installed
+        </span>
+      </span>
 
   </SProviderWrapper>
 </template>
@@ -123,6 +131,9 @@ export default {
     },
       isOkxInstall(){
           return typeof window.okxwallet !== 'undefined';
+      },
+      isGateInstall(){
+          return typeof window.gatewallet !== 'undefined';
       }
   }
 }

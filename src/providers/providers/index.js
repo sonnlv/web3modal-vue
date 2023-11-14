@@ -24,6 +24,9 @@ import FrameLogo from "../logos/frame.svg";
 // @ts-ignore
 import OkxLogo from "../logos/okx.svg";
 
+// @ts-ignore
+import GateLogo from "../logos/gate.svg";
+
 export * from "../injected";
 
 export const OKX = {
@@ -31,7 +34,17 @@ export const OKX = {
     name: "OKX",
     logo: OkxLogo,
     type: "okx",
-    check: "isOkx"
+    check: "isOkx",
+    custom: 1
+};
+
+export const Gate = {
+    id: "gate",
+    name: "Gate Wallet",
+    logo: GateLogo,
+    type: "gate",
+    check: "isGate",
+    custom: 1
 };
 
 export const WALLETCONNECT = {

@@ -127,6 +127,9 @@ export function getProviderDescription(providerInfo) {
         case "okx":
             description = `Connect to your ${providerInfo.name} Wallet`;
             break;
+        case "gate":
+            description = `Connect to your ${providerInfo.name} Wallet`;
+            break;
         case "injected":
             description = `Connect to your ${providerInfo.name} Wallet`;
             break;
