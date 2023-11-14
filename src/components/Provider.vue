@@ -9,18 +9,18 @@
     </SProviderContainer>
       <span v-if="name==='OKX'">
         <span v-if="isOkxInstall()">
-          installed
+          Installed
         </span>
         <span v-else>
-          not installed
+          Not installed
         </span>
       </span>
       <span v-if="name==='Gate Wallet'">
         <span v-if="isGateInstall()">
-          installed
+          Installed
         </span>
         <span v-else>
-          not installed
+          Not installed
         </span>
       </span>
 
