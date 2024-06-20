@@ -1,5 +1,5 @@
 import * as list from "../providers";
-import {CACHED_PROVIDER_KEY, CONNECT_EVENT, ERROR_EVENT, INJECTED_PROVIDER_ID} from "../constants";
+import {ANTEX_PROVIDER_ID, CACHED_PROVIDER_KEY, CONNECT_EVENT, ERROR_EVENT, INJECTED_PROVIDER_ID} from "../constants";
 import {
     filterMatches,
     findMatchingRequiredOptions,
@@ -115,7 +115,11 @@ export class ProviderController {
         const providerList = [];
 
         if (onlyInjected) {
-            providerList.push(INJECTED_PROVIDER_ID);
+            if (window.ethereumAntex) {
+                providerList.push(ANTEX_PROVIDER_ID);
+            } else {
+                providerList.push(INJECTED_PROVIDER_ID);
+            }
         } else {
             if (displayInjected) {
                 providerList.push(INJECTED_PROVIDER_ID);
